@@ -1,0 +1,20 @@
+<script>
+//Writing
+// var destinations = [
+//   "Chisinau, Eminescu 89",
+//   "Balti, Tzutzu 1",
+//   "Ba Cioi, Tzutzu 2",
+//   "Chisinau, Stefan cel Mare 10",
+//   "Chisinau, Stefan cel Mare 100",
+// ];
+// var destinations_json = JSON.stringify(destinations);
+// localStorage.setItem('dst', destinations_json);
+//console.log(destinations_json);
+//Reading
+var destinations_json = localStorage.getItem('dst');
+var destinations = JSON.parse(destinations_json); //Array ???
+destinations.push("Orhei, Shorhei Lend 78");
+var destinations_json = JSON.stringify(destinations);
+localStorage.setItem('dst', destinations_json);
+console.log(destinations_json[0]);
+</script>

@@ -1,0 +1,18 @@
+<script>
+  localStorage.setItem('value_1',10); //,Number
+  localStorage.setItem('value_2','Hello'); //,String
+  localStorage.setItem('value_3',true); //,Boolean
+  localStorage.setItem('value_4',[20,30,40]); //,Array
+  localStorage.setItem('value_5',{color:"red", width:"20px"});//,Object
+  alert(
+    localStorage.getItem('value_1')+
+    localStorage.getItem('value_2')+
+    localStorage.getItem('value_3')
+  );
+</script>
+//JSON, XML, YAML -> 3 formats(structured data/text)
+//JSON.stringify(.....Number,...Object) -> String/JSON (decodeaza)
+//JSON.parse(String/JSON) --
+//script -----> data ----> storage(browser,backend (php), database,network)
+//script <----- data <---- storage
+//CONVERT!!
